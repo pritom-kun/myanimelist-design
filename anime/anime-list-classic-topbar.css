@@ -1,0 +1,283 @@
+#mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_powered 
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background: none no-repeat scroll 100% 0 transparent;
+    border: 0 none;
+    height: 0 !important;
+    overflow: hidden;
+    padding: 32px 0 0 !important;
+    position: fixed;
+    right: 4px;
+    text-align: center;
+    top: 4px;
+    z-index: 10;
+    width: 150px !important;
+}
+
+#mal_cs_listinfo:hover, #mal_cs_links:hover, #mal_cs_otherlinks:hover, #mal_cs_powered:hover 
+{
+    height: 200px !important;
+    padding-top: 32px !important;
+}
+
+#mal_cs_listinfo div, #mal_cs_links div, #mal_cs_otherlinks div, #mal_cs_powered div, #mal_cs_powered dd 
+{
+    -moz-transition: opacity 0.4s ease-in-out 0s;
+    -webkit-transition: opacity 0.4s ease-in-out 0s;
+    -o-transition: opacity 0.4s ease-in-out 0s;
+    transition: opacity 0.4s ease-in-out 0s;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0px 0 0 0;
+    font-size: 0 !important;
+    line-height: 0;
+    margin: 0 !important;
+    opacity: 0;
+    padding: 8px 0 0 !important;
+}
+
+#mal_cs_listinfo:hover div, #mal_cs_links:hover div, #mal_cs_otherlinks:hover div, #mal_cs_powered:hover div, #mal_cs_powered:hover dd 
+{
+    opacity: 1;
+}
+
+#mal_cs_listinfo div:nth-of-type(2), #mal_cs_links div:nth-of-type(2), #mal_cs_otherlinks div:nth-of-type(2), #mal_cs_powered div:nth-of-type(2) 
+{
+    border-radius: 0 0 0px 0px;
+    padding: 4px 0 8px !important;
+}
+
+#mal_cs_listinfo a, #mal_cs_links a, #mal_cs_otherlinks a, #mal_cs_powered a 
+{
+    background-color: rgba(49, 59, 255, 0.5) !important;
+    border-radius: 0px 0px 0px 0px;
+    display: block;
+    font: 13px/17px 'Arial', sans-serif !important;
+    margin: 4px 12px 0;
+    padding: 3px 0 !important;
+    text-decoration: none;
+}
+
+#mal_cs_listinfo a:nth-of-type(1), #mal_cs_links a:nth-of-type(1), #mal_cs_otherlinks a:nth-of-type(1), #mal_cs_powered a:nth-of-type(1) 
+{
+    margin-top: 0;
+}
+
+#mal_cs_listinfo a:hover, #mal_cs_links a:hover, #mal_cs_otherlinks a:hover 
+{
+    background-color: #4169E1 !important;
+}
+
+#mal_cs_listinfo strong a strong 
+{
+    font-weight: normal;
+}
+
+#mal_cs_otherlinks strong 
+{
+    color: #333333;
+    display: block;
+    font: bold 13px/17px 'Arial',sans-serif !important;
+    padding: 0 4px 4px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+#mal_cs_otherlinks strong a 
+{
+    background: none transparent !important;
+    border-radius: 0 0 0 0;
+    color: #333333;
+    display: inline;
+    font: bold 13px/17px 'Arial',sans-serif !important;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+#mal_cs_powered a 
+{
+    background-color: rgba(255,255,255, 0.6) !important;
+    border-radius: 0px 0 0 0 !important;
+    display: block !important;
+    margin: 0 !important;
+    opacity: 0;
+    padding: 8px 0 0 !important;
+}
+
+#mal_cs_powered:hover a 
+{
+    opacity: 1;
+}
+
+#mal_cs_powered a img 
+{
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    background: url("https://i.imgur.com/z2FcZXL.png") no-repeat scroll 50% 6px rgba(49, 59, 255, 0.5);
+    border-radius: 0px 0px 0px 0px;
+    display: block;
+    height: 0;
+    margin: 0 12px;
+    padding: 23px 0 0 126px;
+    width: 0;
+}
+
+#mal_cs_powered a img:hover 
+{
+    background-color: #4169E1;
+}
+
+#mal_cs_powered #search 
+{
+    border-radius: 0 0 0px 0px;
+    padding: 8px !important;
+    position: relative;
+}
+
+#searchBox 
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: #4169E1 #4169E1 #4169E1;
+    border-radius: 0px 0px 0px 0px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: inline-block;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    height: 28px;
+    padding-left: 6px !important;
+    padding-right: 24px !important;
+    vertical-align: top;
+    width: 100px;
+}
+
+#searchBox:hover, #searchBox:focus 
+{
+    border-color: #4169E1 #4169E1 #4169E1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+#searchListButton 
+{
+    background: url("https://i.imgur.com/aciNLyP.png") no-repeat scroll 0 0 transparent !important;
+    border-radius: 0px 0px 0px 0px;
+    height: 0;
+    margin: 0;
+    padding: 16px 0 0 19px !important;
+    position: absolute;
+    right: 12px !important;
+    top: 14px !important;
+    width: 0;
+}
+
+#mal_cs_listinfo 
+{
+    background-image: url("https://i.imgur.com/pjIXz44.png");
+    left: 5px;
+}
+
+#mal_cs_listinfo:hover 
+{
+    background-image: url("https://i.imgur.com/D9UeLPF.png");
+}
+
+#mal_cs_links 
+{
+    background-image: url("https://i.imgur.com/EcXCwzv.png");
+    left: 40px !important;
+    z-index: 9;
+}
+
+#mal_cs_links:hover 
+{
+    background-image: url("https://i.imgur.com/DdSKdGt.png");
+}
+
+#mal_cs_otherlinks 
+{
+    background-image: url("https://i.imgur.com/k7nLXjV.png");
+    left: 75px !important;
+    z-index: 8;
+}
+
+#mal_cs_otherlinks:hover 
+{
+    background-image: url("https://i.imgur.com/Y7jU2fD.png");
+}
+
+#mal_cs_powered 
+{
+    background-image: url("https://i.imgur.com/LU0XNOJ.png");
+    left: 110px !important;
+    z-index: 7;
+    position: fixed !important;
+}
+
+#mal_cs_powered:hover 
+{
+    background-image: url("https://i.imgur.com/jJXfvsu.png");
+}
+
+#mal\_control\_strip 
+{
+    background: transparent !important;
+}
+
+#mal_cs_pic img 
+{
+    display: none;
+}
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links 
+{
+    border-right: 0 none !important;
+}
+
+#mal\_cs\_listinfo,  #mal\_cs\_links,  #mal\_cs\_otherlinks,  #mal\_cs\_powered 
+{
+    background-position: 0 0 !important;
+}
+
+#mal\_cs\_listinfo 
+{
+   left: 5px !important;
+    z-index: 1 !important;
+}
+
+#mal\_cs\_links 
+{
+    left: 40px !important;
+    z-index: 2 !important;
+}
+
+#mal\_cs\_otherlinks 
+{
+    left: 75px !important;
+    z-index: 3 !important;
+}
+
+#mal\_cs\_powered 
+{
+    left: 110px !important;
+    z-index: 4 !important; 
+}
+
+#searchBox 
+{
+    width: 128px !important;
+    margin-left: 1px;   
+}
+
+#mal_cs_powered #search #searchListButton
+{
+    right: 15px !important;
+    top: 12px !important;
+}

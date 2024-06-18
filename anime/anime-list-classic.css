@@ -1,0 +1,648 @@
+/*
+MYANIMELIST CUSTOM CSS
+*/
+
+/*
+PREVIEW PICS
+*/
+
+/*To use the covers manually updated with blink*/
+/*
+@\import "https://dl.dropboxusercontent.com/s/mothglli5fjtg4p/Anime%20List%20Covers.css";
+*/
+
+/*To use the covers provided by Azurewebsites*/
+@\import "https://malscraper.azurewebsites.net/covers/anime/bl_nk/presets/animetitlebefore";
+
+
+/*
+TOP BAR
+*/
+
+@\import "https://dl.dropboxusercontent.com/s/w5ei3hp2wtw8fxv/Color%20Top%20Bar.css";
+
+
+/*
+FONT
+*/
+
+@font-face 
+{
+	font-family: "kite one";
+	font-style: normal;
+	font-weight: 400;
+	src: local("kite one"), url("https://dl.dropboxusercontent.com/s/3vjx3kkvd7rh5zn/Kite%20One.woff") format("woff");
+}
+
+
+/*
+MAIN BACKGROUND
+The space background by default.
+*/
+
+body 
+{
+	background-attachment: fixed;
+	background-clip: border-box;
+	background-color: black;
+	background-position: 0 0%, 0 0;
+	background-repeat: no-repeat no-repeat;
+	background-size: cover;
+	font-family: kite one;
+	font-size: 15px;
+}
+
+/* CURRENT BACKGROUND */
+
+.header_cw:before 
+{
+	position: fixed;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://i.imgur.com/mT24H2v.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	z-index: -3;
+}
+
+/* COMPLETED BACKGROUND */
+
+.header_completed:before 
+{
+	position: fixed;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://i.imgur.com/kK83OZg.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	z-index: -3;
+}
+
+/* ON-HOLD BACKGROUND */
+
+.header_onhold:before 
+{
+	position: fixed;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://i.imgur.com/ejckYp4.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	z-index: -3;
+}
+
+/* DROPPED BACKGROUND */
+
+.header_dropped:before 
+{
+	position: fixed;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://i.imgur.com/W4WkxNb.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	z-index: -3;
+}
+
+/* PLANNED BACKGROUND */
+
+.header_ptw:before 
+{
+	position: fixed;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://i.imgur.com/0bNrm2M.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	z-index: -3;
+}
+
+
+/*
+SECONDARY BACKGROUND
+Goes behind the list but in front of the main background. Image links to a character render in the parenthesis after background. Add or remove the word "contain" (without quotations) after background-size if you want them to be fit or not fit into the entire page. 
+*/
+
+#inlineContent 
+{
+	display: inline-block !important;
+	height: 100%;
+	left: 0 !important;
+	margin: auto !important;
+	position: fixed !important;
+	right: 0 !important;
+	top: 0 !important;
+	width: 100%;
+	z-index: -1 !important;
+	background-size: contain !important;
+}
+
+
+/*
+CUSTOM HEADERS
+*/
+
+.header_cw 
+{
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/8vnFMF4.png");
+	background-position: 50% 15px;
+	background-repeat: no-repeat no-repeat;
+	padding-top: 350px;
+	margin-bottom: 0px;
+	font-size: 0;
+}
+
+.header_completed 
+{
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/VzT8ZOZ.png");
+	background-position: 50% 15px;
+	background-repeat: no-repeat no-repeat;
+	padding-top: 350px;
+	margin-bottom: 0;
+	font-size: 0;
+}
+
+.header_onhold 
+{
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/pnM9NC1.png");
+	background-position: 50% 15px;
+	background-repeat: no-repeat no-repeat;
+	padding-top: 350px;
+	margin-bottom: 0;
+	font-size: 0;
+}
+
+.header_dropped 
+{
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/fOeAI9R.png");
+	background-position: 50% 15px;
+	background-repeat: no-repeat no-repeat;
+	padding-top: 350px;
+	margin-bottom: 0;
+	font-size: 0;
+}
+
+.header_ptw 
+{
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/ZToYBeM.png");
+	background-position: 50% 15px;
+	background-repeat: no-repeat no-repeat;
+	padding-top: 350px;
+	margin-bottom: 0;
+	font-size: 0;
+}
+
+
+/*
+LIST POSITIONING
+*/
+
+#list_surround 
+{
+    font-size: 15px;
+    height: 200px;
+    right: 5%;
+    line-height: 1;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    width: 700px;
+}
+
+
+/*
+LIST BACKGROUND COLOR, ROW HEIGHT AND FLASH
+Adjust the opacity and color of the list itself with the first two sets of code, as well as the height of the rows. td1 is odd numbered rows, td2 is even. The third set of code is for the row color and opacity on height. 
+*/
+
+.td1 
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 65px;
+}
+.td2 
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 65px;
+}
+tr:hover [class^="td"] 
+{
+	transition: .1s linear;
+}
+
+
+/*
+TOP COLORS
+The colors for the top text (#, anime title, score, etc) and the panel iteself. 
+*/
+
+.table_header 
+{
+	background-color : rgba(49, 59, 255, 0.5);
+}
+
+.table_header, .table_header a
+{
+	color: white;
+}
+
+
+/*
+LIST FONT COLOR
+*/
+
+.td1, .td2, .category_totals 
+{
+	color: white;
+}
+
+.animetitle + small 
+{
+	color: #cc66ff !important;
+}
+
+
+/*
+LIST TEXT
+*/
+
+a 
+{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: none;
+}
+a:hover 
+{
+	color: #e6e6e6;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+/*
+HEADER CORNERS
+*/
+
+.table_header:first-of-type 
+{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.table_header:last-of-type 
+{
+	border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+/*
+HEADER SPACING
+*/
+
+.table_header, .td1, .td2, .status_selected, .status_not_selected, .category_totals 
+{
+	border: 0 none;
+	padding:4px;
+	vertical-align:top;
+}
+.borderRBL 
+{
+	line-height:normal !important;
+}
+[cellspacing="0"] 
+{
+	line-height:15px;
+}
+
+
+/*
+CATEGORY TOTALS
+*/
+
+.category_totals 
+{
+	background-color: rgba(72, 64, 87, 0);
+	border-radius: 0px 0px 0px 0px;
+	color: rgba(51, 51, 51, 0);
+	text-align: center;
+	transition: all 0.25s ease-in-out 0s;
+}
+
+.category_totals:hover 
+{
+	background-color: rgba(49, 59, 255, 0.5);
+	color: #eeeeee;
+}
+
+
+/*
+GRAND TOTAL
+*/
+
+#grand_totals 
+{
+	background-color: rgba(225, 225, 225, 0.15);
+	border-radius: 0px;
+	border: 0px none;
+	color: #FFFFFF;
+	line-height: 20px;
+	min-height: 20px;
+	padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/*
+COPYRIGHT
+*/
+
+#copyright 
+{
+	background-color: rgba(49, 59, 255, 0.5);
+	border-radius: 0px;
+	font-size: 12px;
+	color: #EEEEEE;
+	line-height: 17px;
+	margin-top: 10px;
+	padding-top: 6px;
+	text-align:center;
+}
+
+/* #copyright::after 
+{
+} */
+
+
+/*
+RECAPTCHA
+*/
+#recaptcha-terms {
+	background-color: rgba(49, 59, 255, 0.5);
+    border-radius: 0px;
+	font-size: 12px;
+    color: #EEEEEE;
+    line-height: 17px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+
+
+/*
+ON HOVER COVERS
+*/
+
+.animetitle:before 
+{
+	content: "";
+	height: 0px;
+	width: 0px;
+	margin-left:0;
+	margin-top:10px;
+	display:inline-block !important;
+	position: absolute;
+	background-size: contain;
+	transition: all 0.4s ease-in-out;
+}
+
+.animetitle:hover:before 
+{
+	content: "";
+	margin-left:-250px;
+	margin-top: 10px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	box-shadow:rgba(63, 52, 60, 0.55) 0 0 8px 8px;
+	padding-right:150px;
+	padding-top:220px !important;
+	background-color:transparent;
+	background-repeat:no-repeat no-repeat;
+	background-size:cover;
+	position:absolute;
+	z-index:1;
+}
+
+
+/*
+CATEGORY BUTTONS 
+*/
+
+/*CURRENTLY WATCHING*/
+#list_surround .status_selected, #list_surround .status_not_selected 
+{
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/NYYywm8.png");
+	background-position: 0 100%;
+	background-repeat: repeat repeat;
+	border:2px solid white !important;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0px;
+	display: block;
+	padding: 0;
+	position: fixed;
+	height: 90px;
+	width: 320px;
+	left: -10px;
+	top: 73px;
+}
+
+/*COMPLETED*/
+#list_surround .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected 
+{
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/wPhcyGQ.png");
+	background-repeat: repeat repeat;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	top: 165px;
+}
+
+/*ON-HOLD*/
+#list_surround .status_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected 
+{
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/2qSpyqE.png");
+	top: 257px;
+}
+
+/*DROPPED*/
+#list_surround .status_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected 
+{
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/qhZ7tFh.png");
+	background-repeat: repeat repeat;
+	top: 349px;
+}
+
+/*PLANNED*/
+#list_surround .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected 
+{
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/cZIM1lr.png");
+	top: 441px;
+}
+
+/*ALL ANIME*/
+#list_surround .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected 
+{
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url("https://i.imgur.com/VZEzxoG.png");
+	background-position: 0 0;
+	background-repeat: repeat repeat;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0px;
+	top: 533px;
+	width: 320px;
+}
+
+.status_not_selected 
+{
+	-webkit-transition: all 0.4s ease 0s;
+	opacity: 0.7;
+	left: -180px !important;
+	transition: all 0.4s ease 0s;
+}
+
+.status_not_selected:hover 
+{
+	-webkit-transition: all 0.25s ease 0s;
+	color: transparent;
+	opacity: 1;
+	left: -10px !important;
+	transition: all 0.25s ease 0s;
+}
+
+.status_selected a, .status_not_selected a, .status_selected:hover a, .status_not_selected:hover a 
+{
+	color: transparent;
+	display: block;
+	height: 100px;
+	opacity: 0;
+	width: 320px;
+}
+
+.status_selected 
+{
+	display: block;
+}
+
+.status_selected:hover 
+{
+	-webkit-transition: all 0.25s ease-in-out;
+	color: transparent;
+	opacity: 1;
+	left: -10px !important;
+	transition: all 0.25s ease-in-out;
+}
+
+.status_selected
+ {
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+
+/*
+ANIMATED CUSTOM BANNER
+Set left 0 and width 100% for fullsize.
+*/
+
+/*
+#list_surround br { display: none; }
+
+body:before, body:after 
+{
+	position: absolute;
+	display: block;
+	content: '';
+	right: 0%;
+	top: 0;
+	width: 100%;
+	height: 350px;
+}
+
+body:before 
+{
+	background-image: url(https://i.imgur.com/n7CLVpe.jpg);
+	background-position: right top;
+	background-repeat: repeat-x;
+	animation: Slide 50s linear infinite;
+	-webkit-animation: Slide 50s linear infinite;
+	z-index: -2;
+}
+
+body:after 
+{
+	background-image: url(https://i.imgur.com/AReijUo.png);
+	background-position: center -6px;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 -6px 0 #557ec2;
+	z-index: -1;
+}
+
+#list_surround 
+{
+	margin-top: 350px;
+}
+
+@keyframes Slide
+{
+	0% { background-position: 0 0; }
+	100% { background-position: -1935px 0; }
+}
+ 
+@-webkit-keyframes Slide 
+{
+	0% { background-position: 0 0; }
+	100% { background-position: -1935px 0; }
+}
+
+*/
